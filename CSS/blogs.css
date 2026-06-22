@@ -1,0 +1,97 @@
+/* ===== BLOGS SECTION ===== */
+.blogs-section {
+    padding: 80px 10%;
+    background-color: #f4f6f8;
+    text-align: center;
+}
+
+.blogs-container {
+    display: grid;
+    /* Auto-fits cards nicely on all screen sizes */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.blog-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #eeeeee;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Keeps the colored icon box contained within the rounded corners */
+}
+
+.blog-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.blog-icon {
+    background-color: #333333;
+    color: #4caf50;
+    font-size: 3.5rem;
+    padding: 50px 0;
+    text-align: center;
+    border-bottom: 3px solid #4caf50;
+}
+
+.blog-content {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Pushes the 'Read More' link to the bottom if text heights vary */
+}
+
+.blog-date {
+    font-size: 0.85rem;
+    color: #888888;
+    margin-bottom: 12px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.blog-content h3 {
+    font-size: 1.3rem;
+    color: #222222;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+.blog-content p {
+    color: #666666;
+    line-height: 1.6;
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+    flex: 1;
+}
+
+.read-more {
+    color: #333333;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.read-more:hover {
+    color: #4caf50;
+}
+
+.read-more i {
+    transition: transform 0.3s ease;
+}
+
+.read-more:hover i {
+    transform: translateX(5px); /* Creates a subtle arrow sliding effect on hover */
+}

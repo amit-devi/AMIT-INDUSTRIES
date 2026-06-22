@@ -1,0 +1,62 @@
+/* ===== ABOUT SECTION ===== */
+.about-section {
+    padding: 80px 10%;
+    background-color: #ffffff;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    display: block;
+    margin: 0 auto;
+}
+
+.about-text {
+    flex: 1.2;
+    text-align: left;
+}
+
+.about-text .services-heading {
+    text-align: left;
+    margin-bottom: 25px;
+    font-size: 2.5rem;
+}
+
+.about-text p {
+    color: #555555;
+    line-height: 1.7;
+    font-size: 1.05rem;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* ===== ABOUT RESPONSIVE DESIGN ===== */
+@media screen and (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .about-text .services-heading {
+        text-align: center;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+}
